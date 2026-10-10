@@ -14,6 +14,7 @@
 
 1. [Set up a BELABOX SRTLA receiver](<Setting Up a BELABOX SRTLA Receiver.md>)
 2. [Set up OBS scenes for IRL streaming](<OBS Scenes Setup for IRL.md>)
+3. [Your first Go Live from Mobile](<Your First Go Live from Mobile.md>)
 
 ## Supplementary Guides
 
