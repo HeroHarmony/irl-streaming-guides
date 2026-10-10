@@ -1,9 +1,18 @@
-# How To IRL
+# How To Stream IRL
 
-## Bare Minimum Requirements
+We’ll use SRTLA to send video from your phone to the BELABOX receiver. SRT is designed to deliver video reliably over networks with packet loss and changing conditions. SRTLA adds link aggregation, allowing two or more network connections—such as cellular links—to carry the stream together and improve reliability if one link weakens.
 
-- A Windows computer that can run Docker Desktop and OBS Studio.
-- An internet connection and access to your router settings to forward UDP port `5000` for incoming SRTLA streams.
+## What to Expect
+
+- This guide is designed for Windows users
+- Be comfortable with opening ports and handling your network security
+- Have a static public IP Address or use NO-IP
+
+### Software
+
+- OBS Studio
+- NOALBS for automatic scene switching
+- Moblin for iPhone or IRL Pro for Android
 
 ### Recommended
 
