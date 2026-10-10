@@ -22,6 +22,8 @@ Create these four scenes in OBS:
 
 Scene names are flexible, but using a consistent set makes it easier to switch deliberately while streaming.
 
+To switch between scenes automatically based on stream health, see [Download NOALBS for Automatic Scene Switching](<Download NOALBS for Automatic Scene Switching.md>).
+
 ## Add the BELABOX feed
 
 Add the feed as an OBS **Media Source**:
@@ -39,6 +41,30 @@ Add the feed as an OBS **Media Source**:
    Use the Docker host computer's internal network IP address instead of `127.0.0.1` if OBS is on a different computer. Replace `REPLACE_WITH_SECRET_KEY` with the key from the receiver's `config.json`.
 
 6. Select **OK**, then position and size the source in the scene.
+
+### Recommended Media Source settings
+
+Use these as recommended starting settings for the BELABOX Media Source:
+
+![OBS Media Source settings with the input URL blurred](images/obs-media-source-settings-redacted.png)
+
+The full input URL in the screenshot has been blurred. The settings shown are:
+
+| Setting | Recommended value |
+| --- | --- |
+| Local File | Off |
+| Restart playback when source becomes active | Off |
+| Network Buffering | `0 MB` |
+| Input Format | `mpegts` |
+| Reconnect Delay | `5 s` |
+| Use hardware decoding when available | On |
+| Show nothing when playback ends | On |
+| Close file when inactive | Off |
+| YUV Color Range | `Auto` |
+| Apply alpha in linear space | Off |
+| Seekable | Off |
+
+Enable **Use hardware decoding when available**, especially if you plan to stream with adaptive resolution. In the scene that holds the source (for example, `Capture: datagutt-belabox`), select the BELABOX source and choose **Transform → Stretch to Screen** so it fills the scene canvas. Then lock the source in the **Sources** panel. This keeps it stretched across the full canvas if the incoming resolution changes. If the incoming aspect ratio changes, stretching may distort the image.
 
 If you use a separate capture scene, add that scene to `Live` and `Low` as a **Scene** source. This lets both layouts use the same configured BELABOX source.
 
