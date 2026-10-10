@@ -16,7 +16,8 @@
 2. [Set up OBS scenes for IRL streaming](<OBS Scenes Setup for IRL.md>)
 3. [Your first Go Live from Mobile](<Your First Go Live from Mobile.md>)
 4. [Enable OBS WebSocket for remote control](<Setting Up OBS WebSocket.md>)
-5. [Download NOALBS for automatic scene switching](<Download NOALBS for Automatic Scene Switching.md>)
+   - 5. [Download NOALBS for automatic scene switching](<Download NOALBS for Automatic Scene Switching.md>)
+   - 6. [Control OBS remotely from Moblin](<Controlling OBS Remotely from Moblin.md>)
 
 ## Supplementary Guides
 

@@ -1,6 +1,6 @@
 # 4. Enable OBS WebSocket for Remote Control
 
-OBS WebSocket lets other software control OBS. We enable it now so that NOALBS can switch scenes automatically in the next guide, and so an OBS remote-control app can change scenes while you are away from your streaming computer.
+OBS WebSocket lets other software control OBS. We enable it now so that NOALBS can switch scenes automatically in the next guide, and so an OBS remote-control app can change scenes or start and stop your Twitch/YouTube broadcast while you are away from your streaming computer.
 
 ## Enable the WebSocket server
 
@@ -20,8 +20,8 @@ The OBS computer must be reachable by the device running your remote-control app
 
 - On the same computer as OBS, connect to `127.0.0.1` on port `4455`.
 - On another computer on your home network, use the OBS computer's internal network IP address and port `4455`.
-- When you are away from home, connect to your home network through a trusted VPN, then use the OBS computer's address reachable over that VPN.
+- When you are away from home, connect to your home network through a trusted VPN, then use the OBS computer's address reachable over that VPN. Moblin's [OBS Remote Control Relay](https://moblin.app/) is another option for remote access.
 
 Do not expose OBS WebSocket directly to the public internet by forwarding port `4455` on your router. WebSocket provides control over OBS, so restrict access to devices and networks you trust. If Windows Firewall blocks local or VPN connections, allow inbound TCP port `4455` only from the trusted network that needs access.
 
-NOALBS normally runs on the OBS computer and connects through `localhost` using port `4455`; the example configuration already uses this port. Continue with [5. Download NOALBS for automatic scene switching](<Download NOALBS for Automatic Scene Switching.md>) when you are ready to set that up.
+NOALBS normally runs on the OBS computer and connects through `localhost` using port `4455`; the example configuration already uses this port. Continue with [5. Download NOALBS for automatic scene switching](<Download NOALBS for Automatic Scene Switching.md>) or [6. Control OBS remotely from Moblin](<Controlling OBS Remotely from Moblin.md>).
