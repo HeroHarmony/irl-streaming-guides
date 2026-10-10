@@ -10,6 +10,7 @@ We’ll use SRTLA to send video from your phone to the BELABOX receiver. SRT is 
 
 ### Software
 
+- Docker Desktop
 - OBS Studio
 - NOALBS for automatic scene switching
 - Moblin for iPhone or IRL Pro for Android
