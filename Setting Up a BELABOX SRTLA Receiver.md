@@ -97,6 +97,8 @@ docker ps
 
 Allow inbound UDP traffic on port `5000` through Windows Firewall.
 
+For detailed rule setup instructions, see [Setting Up Windows Firewall Rules for BELABOX](<Setting Up Windows Firewall Rules for BELABOX.md>).
+
 On your router, forward UDP port `5000` to the Windows computer's local IP address.
 
 Ideally, configure a DHCP reservation for the computer so that its local IP address does not change.
