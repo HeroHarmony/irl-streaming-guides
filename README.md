@@ -15,6 +15,8 @@
 1. [Set up a BELABOX SRTLA receiver](<Setting Up a BELABOX SRTLA Receiver.md>)
 2. [Set up OBS scenes for IRL streaming](<OBS Scenes Setup for IRL.md>)
 3. [Your first Go Live from Mobile](<Your First Go Live from Mobile.md>)
+4. [Enable OBS WebSocket for remote control](<Setting Up OBS WebSocket.md>)
+5. [Download NOALBS for automatic scene switching](<Download NOALBS for Automatic Scene Switching.md>)
 
 ## Supplementary Guides
 

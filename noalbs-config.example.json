@@ -1,0 +1,58 @@
+{
+  "user": {
+    "id": null,
+    "name": "Example Streamer",
+    "passwordHash": null
+  },
+  "switcher": {
+    "bitrateSwitcherEnabled": true,
+    "onlySwitchWhenStreaming": false,
+    "instantlySwitchOnRecover": true,
+    "autoSwitchNotification": true,
+    "retryAttempts": 5,
+    "triggers": {
+      "low": 500,
+      "rtt": 1000,
+      "offline": 450,
+      "rttOffline": 3500
+    },
+    "switchingScenes": {
+      "normal": "Live",
+      "low": "Low",
+      "offline": "Finding Signal"
+    },
+    "streamServers": [
+      {
+        "streamServer": {
+          "type": "SrtLiveServer",
+          "statsUrl": "http://localhost:8181/stats?publisher=live%2Fstream%2Fbelabox%3Fsrtauth%3DREPLACE_WITH_SECRET_KEY",
+          "publisher": "live/stream/belabox?srtauth=REPLACE_WITH_SECRET_KEY"
+        },
+        "name": "BELABOX Receiver",
+        "priority": 0,
+        "overrideScenes": null,
+        "dependsOn": null,
+        "enabled": true
+      }
+    ]
+  },
+  "software": {
+    "type": "Obs",
+    "host": "localhost",
+    "password": "REPLACE_WITH_OBS_WEBSOCKET_PASSWORD",
+    "port": 4455
+  },
+  "optionalScenes": {
+    "starting": "Staging",
+    "privacy": "BRB / Privacy"
+  },
+  "optionalOptions": {
+    "twitchTranscodingCheck": false,
+    "twitchTranscodingRetries": 5,
+    "twitchTranscodingDelaySeconds": 15,
+    "offlineTimeout": null,
+    "recordWhileStreaming": false,
+    "switchToStartingSceneOnStreamStart": true,
+    "switchFromStartingSceneToLiveScene": true
+  }
+}
