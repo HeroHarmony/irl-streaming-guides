@@ -19,10 +19,9 @@ Replace `RECEIVER_ADDRESS` with the internal network IP address of the computer 
 
 ## Moblin (iPhone)
 
-1. In Moblin, add or edit a streaming destination.
-2. Set the protocol to **SRTLA**.
-3. Paste the full SRTLA destination URL from above.
-4. Save the destination and select it for streaming.
+1. In Moblin, open **Settings → Streams → Create → Custom → SRT(LA)**.
+2. Moblin opens a simple setup wizard. Paste the full SRTLA destination URL from above when prompted, then tap **Next** to continue through the wizard and save the stream.
+3. Select the new stream in Moblin before starting the test.
 
 ## IRL Pro (Android)
 
