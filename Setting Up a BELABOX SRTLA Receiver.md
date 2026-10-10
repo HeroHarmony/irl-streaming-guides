@@ -147,7 +147,7 @@ Moblin and IRL Pro can use the same receiver configuration, although only one sh
 
 ## 7. Configure OBS Studio
 
-Open OBS Studio on the Windows computer.
+Open OBS Studio on the Windows computer. For a recommended IRL scene layout, see [OBS Scenes Setup for IRL](<OBS Scenes Setup for IRL.md>).
 
 1. Add a new **Media Source**.
 2. Uncheck **Local File**.

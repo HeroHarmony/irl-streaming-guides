@@ -13,6 +13,7 @@
 ## Setup
 
 1. [Set up a BELABOX SRTLA receiver](<Setting Up a BELABOX SRTLA Receiver.md>)
+2. [Set up OBS scenes for IRL streaming](<OBS Scenes Setup for IRL.md>)
 
 ## Supplementary Guides
 
