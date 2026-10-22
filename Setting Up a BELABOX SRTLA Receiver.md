@@ -47,7 +47,11 @@ Inside it, create a file named `config.json` containing:
 }
 ```
 
-Replace `REPLACE_WITH_SECRET_KEY` with a private authentication key. The same key will be used by your streaming apps and OBS.
+Replace `REPLACE_WITH_SECRET_KEY` with a key **you choose yourself**, like a password for this receiver. You do not need to get a key from BELABOX or another service.
+
+Choose a long, unique key. For easy copying into the connection URLs below, we recommend using only letters (`A-Z`, `a-z`) and numbers (`0-9`). Keep the double quotes around the key in `config.json`.
+
+Keep your key private and use **exactly the same value** wherever `REPLACE_WITH_SECRET_KEY` appears below: in Moblin or IRL Pro to send video, and in OBS to receive it. When pasting the key into a URL, leave out the double quotes.
 
 ## 3. Download and Start the Receiver
 
@@ -119,7 +123,7 @@ On your iPhone, open Moblin and configure an SRTLA stream destination.
 srtla://YOUR_PUBLIC_IP:5000?streamid=live/stream/belabox?srtauth=REPLACE_WITH_SECRET_KEY
 ```
 
-Replace `YOUR_PUBLIC_IP` with your home internet public IP address and use the secret key from `config.json`.
+Replace `YOUR_PUBLIC_IP` with your home internet public IP address and `REPLACE_WITH_SECRET_KEY` with the key you chose in step 2 and saved in `config.json`.
 
 Save the configuration and select it as the streaming destination.
 
@@ -139,7 +143,7 @@ Add a new connection using the following information:
 srtla://YOUR_PUBLIC_IP:5000?streamid=live/stream/belabox?srtauth=REPLACE_WITH_SECRET_KEY
 ```
 
-Replace the public IP address and secret key with the same values used for Moblin.
+Replace `YOUR_PUBLIC_IP` with your home internet public IP address and `REPLACE_WITH_SECRET_KEY` with the key you chose in step 2 and saved in `config.json`.
 
 Save the connection and select it for streaming.
 
@@ -157,7 +161,8 @@ Open OBS Studio on the Windows computer. For a recommended IRL scene layout, see
 srt://127.0.0.1:4000?streamid=play/stream/belabox?srtauth=REPLACE_WITH_SECRET_KEY
 ```
 
-4. Click OK.
+4. Replace `REPLACE_WITH_SECRET_KEY` in the URL with the same key you chose in step 2 and saved in `config.json`.
+5. Click OK.
 
 If OBS and the Docker container are running on the same computer, use `127.0.0.1` in the URL. If they are on separate computers, use the Docker host computer's internal network IP address instead.
 
